@@ -1,0 +1,57 @@
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+  integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+  crossorigin="anonymous"
+/>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-light" style="margin: 1em 5em;">
+  <a class="navbar-brand" [routerLink]="'/homeMain'">DUGC</a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" style="cursor: pointer;">Home <span class="sr-only">(current)</span></a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" style="cursor: pointer;" [routerLink]="'/members-component'">Members</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/placements.html">Placements</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="'/aboutUs'">About Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/contact.html">Contact Us</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <button
+        class="btn btn-outline-light my-2 my-sm-0"
+        type="submit"
+        (click)="onLoginClick()"
+      >
+        Login
+      </button>
+    </form>
+  </div>
+</nav>
+<div class="">
+  <img src="assets/statue1.jpg" class="Jumbotron" style="opacity: 70%; margin: 1em 5em; width: 89.5%;">
+  
+</div>
+
+

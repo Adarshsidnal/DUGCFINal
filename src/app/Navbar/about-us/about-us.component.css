@@ -1,0 +1,10 @@
+.box{
+    margin-top: 2.5%;
+    max-width:50%;
+    float: left;
+}
+.image{
+    float: right;
+    border-radius: 30px;
+    opacity: 0.9;
+}

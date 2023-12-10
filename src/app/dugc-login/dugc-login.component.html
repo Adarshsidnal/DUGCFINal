@@ -1,0 +1,95 @@
+<br /><br />
+
+<section class="vh-95">
+  <div class="container-fluid h-custom">
+    <div
+      class="row d-flex justify-content-center align-items-center just h-100"
+    >
+      <div class="col-md-9 col-lg-6 col-xl-5" style="margin-right: 70px">
+        <div id="overlay-text">
+          <div id="title">DUGC</div>
+          <div id="subtitle">KLE Technological University</div>
+        </div>
+        <img src="assets/statue1.jpg" class="img1" alt="Sample image" />
+      </div>
+      <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1 login">
+        <form (submit)="loginUser(get.value)" #get="ngForm">
+          <!-- Email input -->
+          <div class="form-outline mb-4">
+            <label class="" for="form3Example3" style="margin-left: 10%; padding-bottom:2% ; padding-top: 3%;"
+              >Email</label
+            >
+            <input
+              name="email"
+              type="email"
+              id="form3Example3"
+              class="container1 form-control form-control-lg pass"
+              [(ngModel)]="logindata.email"
+              placeholder="email"
+              #name2="ngModel"
+              required
+              minlength="4"
+              [(ngModel)]="userMail"
+            />
+            <div
+              *ngIf="name2.invalid && (name2.dirty || name2.touched)"
+              class="alert"
+            ></div>
+          </div>
+
+          <!-- Password input -->
+          <div class="form-outline mb-3">
+            <label class="" for="form3Example4" style="margin-left: 10%; padding-bottom:2% ;"
+              >Password</label
+            >
+            <input
+              name="password"
+              type="password"
+              id="form3Example4"
+              class="container1 form-control form-control-lg pass"
+              [(ngModel)]="logindata.password"
+              placeholder="password"
+              #name="ngModel"
+              required
+              minlength="4"
+            />
+            <div
+              *ngIf="name.invalid && (name.dirty || name.touched)"
+              class="alert"
+            ></div>
+          </div>
+          <div class="ml-5">
+            <a href="" [routerLink]="'/forget-password'" (click)="toggleForm()"><p style=" color: black; cursor: pointer; margin-left: 10%; ">Forgot password?</p></a>
+          </div>
+
+          <!-- <div class="d-flex justify-content-between align-items-center">
+             Checkbox
+             <div class="form-check mb-0">
+                <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3" />
+                <label class="form-check-label" for="form2Example3">
+                  Remember me
+                </label>
+              </div> 
+            <a href="#!" class=" link-danger">Forgot password?</a>
+          </div> -->
+
+          <div class="text-center text-lg-start mt-4 pt-2">
+            <button
+              type="submit"
+              id="card"
+              class="btn"
+              style="
+                padding-left: 2.5rem;
+                padding-right: 2.5rem;
+                margin-left: 38%;
+              "
+              (click)="onCLickLoginHome()"
+            >
+              Log in
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

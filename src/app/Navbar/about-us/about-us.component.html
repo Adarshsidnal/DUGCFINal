@@ -1,0 +1,88 @@
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+  integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+  crossorigin="anonymous"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+  integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+  crossorigin="anonymous"
+/>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-light justify-end">
+  <a class="navbar-brand" [routerLink]="'/homeMain'">DUGC</a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" 
+          >Home <span class="sr-only">(current)</span></a
+        >
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" >Members</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/placements.html">Placements</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="'/aboutUs'">About Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/contact.html">Contact Us</a>
+      </li>
+      
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <button
+        class="btn btn-outline-light my-2 my-sm-0"
+        type="submit"
+        (click)="onLoginClick()" 
+      >
+        Login
+      </button>
+    </form>
+  </div>
+</nav>
+
+
+<h2 style="color:brown;" class="pt-2">Inspiring excellence, nurturing talent</h2>
+<div class="box" style="width: 50%; text-align: justify;">
+    <span style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 18px;">
+        KLE Technological University (KLE Tech) has its roots in one of the premier
+        Engineering Institutions of Karnataka, B. V. Bhoomaraddi College of
+        Engineering and Technology (BVB), a prestigious Engineering College in
+        Hubballi. The founding organization KLE Society, Belgaum, established BVB
+        College in 1947 to create an institution that would lay the foundation of
+        modern engineering education in the northern region of Karnataka.
+    </span><br><br>
+    <span style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 18px;">  
+        Over time, it gained tremendous credibility with the industries and employers and emerged
+        as a brand to reckon with. The Alumni of the Institute have done exceedingly
+        well in all spheres of life at both national and international levels and
+        brought name and fame to themselves and their alma mater. 
+    </span><br><br>
+    <span style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 18px;"  >
+        To maintain and
+        enhance its relevance in meeting global economies’ ever-changing demands, the
+        BVB college, under the leadership of Dr. Prabhakar Kore, undertook a strategic
+        initiative to transform itself into a University of National Distinction.
+    </span>
+</div>
+<div class="image">
+    <img src="assets/kletechimage.jpg" alt="" class="image" >
+</div>

@@ -1,0 +1,76 @@
+<div class="nav-container">
+  <div class="navbar">
+    <div class="nav-section nav-img-section">
+      <img src="assets/logo.png" alt="KLE Tech logo" class="nav-logo" [routerLink]="['']">
+    </div>
+    <div class="nav-section nav-des-section">
+      <div>
+        <div class="nav-right-section">
+          <div class="nav-des nav-des-first">DUGC</div>
+          <div class="nav-des nav-des-second">SoCSE</div>
+        </div>
+        <!-- <div class="nav-des-sub">DEPARTMENT OF</div> -->
+        <!-- <div class="nav-des-sub">UNDERGRADUATE COURSES</div> -->
+      </div>
+      <div class="nav-options2">
+        <div class="nav-des" id="welcome-message" *ngIf="user_type_name != ''">Welcome, <span
+            class="role-display">{{user_type_name}}</span></div>
+        <!-- <div class="nav-op2"  [routerLink]="['/loginMain']" *ngIf="!auth.LoggedIn()">Login</div>
+        <div class="nav-op2" [routerLink]="['/register']"  *ngIf="!auth.LoggedIn()">Logout</div>
+        <div class="nav-op2" *ngIf="auth.LoggedIn()" (click)="auth.logout()">Logout</div> -->
+      </div>
+    </div>
+  </div>
+
+
+  <!-- <div class="nav-options">
+    <div class="nav-op" routerLink="/Minor" [routerLinkActive]="['selected-option']">
+      ISA Analysis</div>
+    <div class="nav-op" routerLink="/Endsem" [routerLinkActive]="['selected-option']">
+      End Sem Result Analysis</div>
+    <div class="nav-op" routerLink="/Lab" [routerLinkActive]="['selected-option']">
+      Lab CIE Analysis</div>
+    <div class="nav-op" routerLink="/Withdrawal" [routerLinkActive]="['selected-option']">
+      Course Withdrawal</div>
+    <div class="nav-op" routerLink="/Circular" [routerLinkActive]="['selected-option']">
+      Circular</div>
+    <div class="nav-op" routerLink="/eligibility" [routerLinkActive]="['selected-option']">
+      Eligibility</div>
+    <div class="nav-op" routerLink="/makeup" [routerLinkActive]="['selected-option']">
+      Makeup Minor</div>
+
+  </div> -->
+</div>
+
+<div class="wrapper">
+  <router-outlet></router-outlet>
+</div>
+
+
+<div id="c1" class="text-center">
+  <footer class="py-4">
+
+    <div class="center1">
+      <p>&copy;2022 KLE Technological University. All rights reserved.</p>
+      <a aria-label="Angular on twitter" target="_blank" rel="noopener" href="https://twitter.com/KLETechbvb"
+        title="Twitter">
+        <img src="assets/footer/twitter.svg" alt="" class="footer-icon">
+      </a>
+      <a aria-label="Angular on YouTube" target="_blank" rel="noopener"
+        href="https://www.youtube.com/c/KLETechnologicalUniversity" title="YouTube">
+        <img src="assets/footer/youtube.svg" alt="" class="footer-icon">
+      </a>
+
+      <a aria-label="Facebook" target="_blank" rel="noopener" href="https://www.facebook.com/kletechbvb/"
+        title="facebook">
+        <img src="assets/footer/facebook.svg" alt="" class="footer-icon">
+
+      </a>
+
+      <a title="Linkedin" href="https://www.linkedin.com/school/kletechbvb/" target="_blank" class="linkedin">
+
+        <img src="assets/footer/linkedin.svg" alt="" class="footer-icon">
+      </a>
+    </div>
+  </footer>
+</div>

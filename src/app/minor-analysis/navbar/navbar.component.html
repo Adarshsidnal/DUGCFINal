@@ -1,0 +1,51 @@
+<div class="nav-options" >
+    <div class="nav-op" routerLink="/Minor" [routerLinkActive]="['selected-option']">
+      ISA Analysis</div>
+    <div class="nav-op" routerLink="/Endsem" [routerLinkActive]="['selected-option']">
+      End Sem Result Analysis</div>
+    <div class="nav-op" routerLink="/Lab" [routerLinkActive]="['selected-option']">
+      Lab CIE Analysis</div>
+    <div class="nav-op" routerLink="/Withdrawal" [routerLinkActive]="['selected-option']">
+      Course Withdrawal</div>
+    <div class="nav-op" routerLink="/Circular" [routerLinkActive]="['selected-option']">
+      Circular</div>
+    <div class="nav-op" routerLink="/eligibility" [routerLinkActive]="['selected-option']">
+      Eligibility</div>
+    <div class="nav-op" routerLink="/makeup" [routerLinkActive]="['selected-option']">
+      Makeup Minor</div>
+
+  </div>
+
+<div class="nav-container">
+    <!-- <div class="navbar">
+        <div class="nav-section nav-img-section">
+            <img src="assets/logo.png" alt="KLE Tech logo" class="nav-logo">
+        </div>
+        <div class="nav-section nav-des-section">
+            <div class="nav-des">DUGC</div>
+            <div class="nav-des-sub">DEPARTMENT OF</div>
+            <div class="nav-des-sub">UNDERGRADUATE COURSES</div>
+        </div>
+    </div> -->
+    <div class="nav-options">
+        <div *ngIf="userType =='CourseCoordinator'">
+            <div class="nav-op" routerLink="/Minor/coordinator" [routerLinkActive]="['selected-option']">
+                Upload Marksheets</div>
+        </div>
+        <div *ngIf="userType =='DUGCCoordinator'">
+            <div class=" nav-op" routerLink="/Minor/dugc" [routerLinkActive]="['selected-option']">View ISA Analysis
+            </div>
+        </div>
+        <div *ngIf="userType =='DUGCChairman'">
+            <div class=" nav-op" routerLink="/Minor/dugc" [routerLinkActive]="['selected-option']">View ISA Analysis
+            </div>
+            <div class="nav-op" routerLink="/Minor/dugc_chairman" [routerLinkActive]="['selected-option']">Create Course
+            </div>
+        </div>
+        <a href="http://localhost:3000/filemanager" target="_self">
+            <div class="nav-op">
+                View Excel Sheets
+            </div>
+        </a>
+    </div>
+</div>
